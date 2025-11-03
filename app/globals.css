@@ -1,2 +1,19 @@
 @import "tailwindcss";
 
+/* Tailwind v4 custom theme tokens */
+@theme {
+  /* Black scale — adjust to your palette if needed */
+  --color-black-50:  #f6f6f6;
+  --color-black-100: #eaeaea;
+  --color-black-200: #d5d5d5;
+  --color-black-300: #bfbfbf;
+  --color-black-400: #a6a6a6;
+  --color-black-500: #8c8c8c;
+  --color-black-600: #737373;
+  --color-black-700: #595959;
+  --color-black-800: #404040;
+  --color-black-900: #1f1f1f;
+}
+
+/* Usage examples:
+   text-black-100, bg-black-900, border-black-300, etc. */
