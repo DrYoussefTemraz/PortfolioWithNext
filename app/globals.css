@@ -10,9 +10,9 @@
   --color-black: #000000;
   /* Black scale: 50 (lightest) -> 900 (darkest) */
   --color-black-50: #fafafa;
-  --color-black-100: #f4f4f5;
-  --color-black-200: #e5e5e5;
-  --color-black-300: #404040; /* darker mid tone for visible dark bg */
+  --color-black-100: #000319;
+  --color-black-200: rgba(17, 25, 40, 0.75);
+  --color-black-300: rgba(255, 255, 255, 0.125); 
   --color-black-400: #262626;
   --color-black-500: #171717;
   --color-black-600: #111111;
@@ -174,5 +174,77 @@
   }
   .bg-dot-black {
     background-image: url("data:image/svg+xml,...");
+  }
+
+  /* Reusable utilities for Hero section */
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 80px 80px; /* mobile: wider cells */
+    background-image:
+      linear-gradient(to right, rgba(228,228,231,0.5) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(228,228,231,0.5) 2px, transparent 2px);
+  }
+  .dark .hero-grid {
+    background-image:
+      linear-gradient(to right, rgba(38,38,38,0.5) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(38,38,38,0.5) 2px, transparent 2px);
+  }
+  @media (min-width: 768px) {
+    .hero-grid {
+      background-size: 44px 44px;
+      background-image:
+        linear-gradient(to right, rgba(228,228,231,0.45) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(228,228,231,0.45) 1px, transparent 1px);
+    }
+    .dark .hero-grid {
+      background-image:
+        linear-gradient(to right, rgba(38,38,38,0.45) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(38,38,38,0.45) 1px, transparent 1px);
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-grid { background-size: 52px 52px; }
+  }
+
+  .hero-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255,255,255,0) 40%,
+      rgba(255,255,255,0.7) 100%
+    );
+  }
+  .dark .hero-overlay {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0,0,0,0) 40%,
+      rgba(0,0,0,0.7) 100%
+    );
+  }
+  @media (min-width: 768px) {
+    .hero-overlay {
+      background: radial-gradient(
+        ellipse at center,
+        rgba(255,255,255,0) 20%,
+        white 100%
+      );
+    }
+    .dark .hero-overlay {
+      background: radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,0) 20%,
+        #000 100%
+      );
+    }
   }
 }
