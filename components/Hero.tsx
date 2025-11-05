@@ -1,6 +1,9 @@
 import { cn } from "@/lib/utils"
 import { Spotlight } from "./ui/spotlight"
 import { TextGenerateEffect } from "./ui/textGenerateEffect"
+import MagicButton from "./ui/MagicButton"
+import { ArrowRightIcon } from "lucide-react"
+import { FaLocationArrow } from "react-icons/fa"
 
 const Hero = () => {
   return (
@@ -26,6 +29,14 @@ const Hero = () => {
           <p className="text-center text-sm md:text-lg lg-text-2xl md:tracking-wider mb-4">
             Hi, i&apos;m Youssef Temraz, a Next js Developer based in Cairo
           </p>
+          <a href="#about">
+          <MagicButton
+          title="Show My Work"
+          icon={<FaLocationArrow />}
+          position="right"
+          handleClick={() => {}}
+          otherClasses=""/>
+          </a>
         </div>
       </div>
     </div>
