@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative z-20 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 py-10">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={
           [
@@ -17,7 +17,7 @@ export default function Home() {
         }
         />
         <Hero />
-        <Grid/>
+        <Grid/>  
       </div>
     </main>
   );

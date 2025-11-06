@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="z-10 pointer-events-none fixed inset-0 w-full h-full">
+        <div className="z-0 pointer-events-none fixed inset-0 w-full h-full">
           <div className="hero-grid" />
           <div className="hero-overlay" />
         </div>

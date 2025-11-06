@@ -190,8 +190,8 @@
   }
   .dark .hero-grid {
     background-image:
-      linear-gradient(to right, rgba(38,38,38,0.5) 2px, transparent 2px),
-      linear-gradient(to bottom, rgba(38,38,38,0.5) 2px, transparent 2px);
+      linear-gradient(to right, rgba(255,255,255,0.08) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(255,255,255,0.08) 2px, transparent 2px);
   }
   @media (min-width: 768px) {
     .hero-grid {
@@ -202,8 +202,8 @@
     }
     .dark .hero-grid {
       background-image:
-        linear-gradient(to right, rgba(38,38,38,0.45) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(38,38,38,0.45) 1px, transparent 1px);
+        linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
     }
   }
   @media (min-width: 1024px) {
@@ -221,14 +221,14 @@
     background: radial-gradient(
       ellipse at center,
       rgba(255,255,255,0) 40%,
-      rgba(255,255,255,0.7) 100%
+      rgba(255,255,255,0.35) 100%
     );
   }
   .dark .hero-overlay {
     background: radial-gradient(
       ellipse at center,
       rgba(0,0,0,0) 40%,
-      rgba(0,0,0,0.7) 100%
+      rgba(0,0,0,0.35) 100%
     );
   }
   @media (min-width: 768px) {
@@ -236,14 +236,14 @@
       background: radial-gradient(
         ellipse at center,
         rgba(255,255,255,0) 20%,
-        white 100%
+        rgba(255,255,255,0.25) 100%
       );
     }
     .dark .hero-overlay {
       background: radial-gradient(
         ellipse at center,
         rgba(0,0,0,0) 20%,
-        #000 100%
+        rgba(0,0,0,0.25) 100%
       );
     }
   }
