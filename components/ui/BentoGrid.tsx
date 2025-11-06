@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3",
+        "mx-auto w-full max-w-7xl grid grid-cols-1 gap-4 px-4 md:px-6 md:auto-rows-[12rem] md:grid-cols-6",
         className,
       )}
     >
@@ -26,6 +26,7 @@ export const BentoGridItem = ({
   header,
   icon,
   id,
+  imgClassName,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -33,6 +34,7 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   id?: number;
+  imgClassName?: string;
 }) => {
   return (
     <div
