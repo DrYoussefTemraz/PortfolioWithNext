@@ -82,6 +82,33 @@
   to { background-position: -200% 0; }
 }
 
+/* Gradient blob motion used by BackgroundGradientAnimation */
+@keyframes first {
+  0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+  50% { transform: translate(30%, 20%) scale(1.05) rotate(180deg); }
+  100% { transform: translate(-50%, -50%) scale(1) rotate(360deg); }
+}
+@keyframes second {
+  0% { transform: translate(10%, -20%) scale(1) rotate(0deg); }
+  50% { transform: translate(-20%, 30%) scale(0.95) rotate(180deg); }
+  100% { transform: translate(10%, -20%) scale(1) rotate(360deg); }
+}
+@keyframes third {
+  0% { transform: translate(-30%, 10%) scale(1) rotate(0deg); }
+  50% { transform: translate(20%, -30%) scale(1.08) rotate(180deg); }
+  100% { transform: translate(-30%, 10%) scale(1) rotate(360deg); }
+}
+@keyframes fourth {
+  0% { transform: translate(0%, 0%) scale(1) rotate(0deg); }
+  50% { transform: translate(-20%, 10%) scale(0.9) rotate(180deg); }
+  100% { transform: translate(0%, 0%) scale(1) rotate(360deg); }
+}
+@keyframes fifth {
+  0% { transform: translate(20%, -10%) scale(1) rotate(0deg); }
+  50% { transform: translate(-10%, 30%) scale(1.1) rotate(180deg); }
+  100% { transform: translate(20%, -10%) scale(1) rotate(360deg); }
+}
+
 @keyframes moveHorizontal {
   0% { transform: translateX(-50%) translateY(-10%); }
   50% { transform: translateX(50%) translateY(10%); }
