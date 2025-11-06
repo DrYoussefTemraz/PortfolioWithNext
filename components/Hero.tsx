@@ -23,19 +23,20 @@ const Hero = () => {
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Hello there, I'm Youssef Temraz
           </h2>
-          <TextGenerateEffect 
-          words="Transforming concepts into Seamless Experience very profesionally"
-          className="text-center text-[40px] md:text-5xl lg:text-6xl" />
+          <TextGenerateEffect
+            words="Transforming concepts into Seamless User Experience"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl" 
+            />
           <p className="text-center text-sm md:text-lg lg-text-2xl md:tracking-wider mb-4">
             Hi, i&apos;m Youssef Temraz, a Next js Developer based in Cairo
           </p>
           <a href="#about">
-          <MagicButton
-          title="Show My Work"
-          icon={<FaLocationArrow />}
-          position="right"
-          handleClick={() => {}}
-          otherClasses=""/>
+            <MagicButton
+              title="Show My Work"
+              icon={<FaLocationArrow />}
+              position="right"
+              handleClick={() => { }}
+              otherClasses="" />
           </a>
         </div>
       </div>
