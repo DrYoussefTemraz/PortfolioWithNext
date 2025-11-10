@@ -26,7 +26,7 @@ export function GlobeDemo() {
     arcLength: 0.9,
     rings: 1,
     maxRings: 3,
-    initialPosition: { lat: 22.3193, lng: 114.1694 },
+    initialPosition: { lat: 30.0444, lng: 31.2357 },
     autoRotate: true,
     autoRotateSpeed: 0.5,
   };
@@ -39,6 +39,15 @@ export function GlobeDemo() {
       endLat: -22.9068,
       endLng: -43.1729,
       arcAlt: 0.1,
+      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    },
+    {
+      order: 1,
+      startLat: 30.0444,   // Cairo
+      startLng: 31.2357,
+      endLat: 51.5072,     // London
+      endLng: -0.1276,
+      arcAlt: 0.25,
       color: colors[Math.floor(Math.random() * (colors.length - 1))],
     },
     {
