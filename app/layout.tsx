@@ -14,7 +14,6 @@ const geistMono = Roboto_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata: Metadata = {
   title: "Youssef Temraz",
   description: "Modern and Responsive Portfolio",
@@ -26,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
