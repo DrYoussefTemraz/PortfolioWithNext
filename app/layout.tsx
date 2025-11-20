@@ -8,11 +8,15 @@ import DisableReactDevTools from "./disable-devtools";
 const geistSans = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap',
+  adjustFontFallback: false,
 });
 
 const geistMono = Roboto_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: 'swap',
+  adjustFontFallback: false,
 });
 export const metadata: Metadata = {
   title: "Youssef Temraz",
