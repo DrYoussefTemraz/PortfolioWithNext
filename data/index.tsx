@@ -8,7 +8,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
+      title: "I build scalable, maintainable web applications with clean architecture",
       description: "",
       className: "lg:col-span-4 md:col-span-3 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -18,8 +18,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
+      title: "Specializing in React, Next.js, and TypeScript",
+      description: "With expertise in Atomic Design and reusable UI systems",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -29,7 +29,7 @@ export const navItems = [
     {
       id: 3,
       title: "My tech stack",
-      description: "I constantly try to improve",
+      description: "Constantly evolving and improving",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "Frontend Developer with a passion for clean code and great UX",
       description: "",
       className: "lg:col-span-3 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -46,11 +46,10 @@ export const navItems = [
       img: "/grid.svg",
       spareImg: "/b4.svg",
     },
-  
     {
       id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
+      title: "Building healthcare and business solutions",
+      description: "Leveraging my medical background",
       className: "lg:col-span-3 md:col-span-3 md:row-span-2 lg:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,8 +58,8 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
+      title: "Let's build something amazing together!",
+      description: "Get in touch to discuss your project",
       className: "lg:col-span-3 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -69,71 +68,82 @@ export const navItems = [
     },
   ];
   
-  export const projects = [
+  import { TechIconKey } from "@/utils/techIcons";
+
+export interface Project {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  iconComponents: TechIconKey[];
+  link: string;
+}
+
+export const projects: Project[] = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      title: "CraftScene Customer Website",
+      des: "A responsive multi-page platform for construction services, featuring service exploration, consultation requests, and project submissions.",
+      img: "/craftscene-customer.svg",
+      iconComponents: ["react", "nextjs", "typescript", "tailwind"],
+      link: "https://craftsceneapp.com/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      title: "CraftScene Admin Dashboard",
+      des: "Comprehensive role-based dashboard for suppliers, engineers & admins with tables, filters, status updates, and notifications.",
+      img: "/craftscene-admin.svg",
+      iconComponents: ["react", "typescript", "tailwind", "nodejs"],
+      link: "https://dashboard.craftsceneapp.com/",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: "Pharmacy Management System",
+      des: "A healthcare solution integrating inventory management, prescription tracking, and patient records with a focus on UX for medical professionals.",
+      img: "/pharmacy-mgmt.svg",
+      iconComponents: ["react", "nodejs", "mongodb", "express"],
+      link: "#",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "Portfolio Website",
+      des: "A modern, animated portfolio website showcasing my projects and skills with a clean, interactive UI.",
+      img: "/portfolio.svg",
+      iconComponents: ["nextjs", "tailwind", "typescript"],
+      link: "https://yousseftemraz.vercel.app",
     },
   ];
   
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Youssef transformed our construction tech platform with his exceptional frontend skills. His implementation of Atomic Design principles resulted in a 40% faster development cycle and a significantly improved user experience. His attention to detail and clean code practices were impressive.",
+      name: "Ahmed Samir",
+      title: "CTO at CraftScene",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Youssef was a game-changer for our healthcare startup. His unique combination of medical knowledge and technical expertise helped us create a truly patient-centric application. He consistently delivered high-quality code and provided valuable insights from both technical and medical perspectives.",
+      name: "Dr. Sarah Mohamed",
+      title: "CEO at HealthTech Solutions",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Youssef's ability to understand complex business requirements and translate them into elegant technical solutions is remarkable. His work on our admin dashboard significantly improved our operational efficiency. His communication skills and professionalism made the collaboration seamless.",
+      name: "Omar Hassan",
+      title: "Operations Manager at BuildItRight",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "As a fellow developer, I've been consistently impressed by Youssef's problem-solving skills and clean code practices. His React components are well-structured, reusable, and thoroughly tested. He's a true asset to any development team.",
+      name: "Mariam Adel",
+      title: "Senior Full-Stack Developer",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Youssef's expertise in TypeScript and Next.js helped us modernize our frontend infrastructure. His architectural decisions have made our codebase more maintainable and performant. His dedication to best practices is evident in every line of code he writes.",
+      name: "Karim Tarek",
+      title: "Engineering Lead at TechVentures",
     },
   ];
   
@@ -173,29 +183,29 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Frontend Developer @ CraftScene",
+      desc: "Developed and maintained customer-facing website and admin dashboard using React, TypeScript, and Tailwind CSS. Implemented reusable UI components following Atomic Design principles.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Freelance Web Developer",
+      desc: "Built custom web applications for clients across various industries, with a focus on healthcare and business solutions. Delivered responsive, accessible, and performant applications.",
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Healthcare Technology Consultant",
+      desc: "Leveraged medical background to help healthcare startups optimize their digital solutions. Bridged the gap between medical teams and developers to create patient-focused applications.",
+      className: "md:col-span-2",
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Open Source Contributor",
+      desc: "Contributed to open source projects, focusing on improving documentation, fixing bugs, and adding new features to popular React and Next.js libraries.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },

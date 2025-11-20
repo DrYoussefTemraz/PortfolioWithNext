@@ -3,10 +3,37 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output:"export",
-  typescript:{
+  output: "export",
+  typescript: {
     ignoreBuildErrors: true,
-  }
+  },
+  // Enable React Strict Mode
+  reactStrictMode: true,
+  // Ensure static assets are properly copied
+  images: {
+    unoptimized: true, // Required for static exports
+  },
+  // Copy font files to the output directory
+  async exportPathMap() {
+    return {
+      '/': { page: '/' },
+      // Add other static pages here
+    };
+  },
+  // Copy font files to the output directory
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default withSentryConfig(nextConfig, {
