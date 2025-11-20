@@ -4,6 +4,7 @@ import Head from "next/head";
 import * as Sentry from "@sentry/nextjs";
 import { useState, useEffect } from "react";
 
+// DELETE THIS FILE WHEN BUILDING THE APP
 class SentryExampleFrontendError extends Error {
   constructor(message: string | undefined) {
     super(message);
