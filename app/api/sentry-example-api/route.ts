@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+// // DELETE THIS FILE WHEN BUILDING THE APP
 export const dynamic = "force-dynamic";
 class SentryExampleAPIError extends Error {
   constructor(message: string | undefined) {
