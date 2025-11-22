@@ -16,6 +16,7 @@ export default function Home() {
           navItems
         }
         />
+        <img src="/joe.jpg" alt="joe" className="absolute top-10 left-10 rounded-full h-50 w-50 max-h-dvh" />
         <Hero />
         <Grid/>  
         <RecentProjects/>
