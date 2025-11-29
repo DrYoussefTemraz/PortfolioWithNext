@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import ProfileImage from "@/components/ProfileImage";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatinNav";
 import { navItems } from "@/data";
@@ -16,14 +17,14 @@ export default function Home() {
           navItems
         }
         />
-        <img src="/joe.jpg" alt="joe" className="absolute top-10 left-10 rounded-full h-50 w-50 max-h-dvh" />
+        <ProfileImage />
         <Hero />
-        <Grid/>  
-        <RecentProjects/>
-        <Clients/>
-        <Experience/>
-        <Approach/>
-        <Footer/>
+        <Grid />
+        <RecentProjects />
+        <Clients />
+        <Experience />
+        <Approach />
+        <Footer />
       </div>
     </main>
   );
