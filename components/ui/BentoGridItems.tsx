@@ -34,7 +34,7 @@ export const BentoGridItem = ({
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
   const [copied, setCopied] = useState(false);
   const handleCopy = () => {
-    navigator.clipboard.writeText("youssef@youssef.com");
+    navigator.clipboard.writeText("titotemraz@gmail.com");
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
