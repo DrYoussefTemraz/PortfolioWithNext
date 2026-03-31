@@ -3,7 +3,7 @@ import React from 'react'
 const ProfileImage = () => {
     return (
         <img
-            src="/taher33.jpg"
+            src="/joe.jpg"
             alt="joe"
             className="absolute z-50 rounded-full object-cover
         w-24 h-24 top-5 left-5
