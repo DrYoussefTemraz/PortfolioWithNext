@@ -187,9 +187,9 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Web Developer - CraftScene",
+      desc: "Created customer website and dashboard for CraftScene's custom furniture and interior design services using React, Three.js, and GSAP animations.",
+      className: "md:col-span-2",
       thumbnail: "/exp3.svg",
     },
     {
