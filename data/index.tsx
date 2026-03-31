@@ -82,7 +82,7 @@ export const navItems = [
       id: 2,
       title: "MedCore",
       des: "Healthcare Facility Management Consultancy with Comprehensive Services of Facility planning, design, and construction.",
-      img: "/MedCore.svg",
+      img: "/medcore.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/DrYoussefTemraz/MedCore",
     },
