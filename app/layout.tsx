@@ -19,7 +19,7 @@ const geistMono = Roboto_Mono({
   adjustFontFallback: false,
 });
 export const metadata: Metadata = {
-  title: "Taher Youssef",
+  title: "Youssef Temraz Portfolio",
   description: "Modern and Responsive Portfolio",
 };
 

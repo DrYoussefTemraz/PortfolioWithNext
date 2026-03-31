@@ -72,68 +72,68 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
+      title: "Events Application",
+      des: "A full-stack events application built with Next.js and MongoDB",
+      img: "/event1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "https://github.com/DrYoussefTemraz/eventapp-nextjsfullstack",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
+      title: "MedCore",
+      des: "Healthcare Facility Management Consultancy with Comprehensive Services of Facility planning, design, and construction.",
+      img: "/MedCore.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "https://github.com/DrYoussefTemraz/MedCore",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
+      title: "CraftScene Customer Website",
+      des: "All what belongs to Archtecture, customer website for CraftScene, a company that provides custom furniture and interior design services.",
+      img: "/craftweb.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "https://craftsceneapp.com/",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
+      title: "CraftScene Dashboard",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
+      img: "/craftdash.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "https://dashboard.craftsceneapp.com/login",
     },
   ];
   
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Joe Temraz",
-      title: "Director of AlphaStream Technologies",
+        "Youssef's work on the MedCore healthcare platform was exceptional. His attention to detail in creating a comprehensive facility management system demonstrated both technical expertise and deep understanding of healthcare workflows. The result exceeded our expectations.",
+      name: "Sarah Mitchell",
+      title: "CEO of MedCore Solutions",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Joe Temraz",
-      title: "Director of AlphaStream Technologies",
+        "The CraftScene customer website Youssef delivered transformed our online presence. His ability to blend elegant design with robust functionality created an intuitive experience that our clients love. Professional, creative, and deadline-focused.",
+      name: "Michael Chen",
+      title: "Founder of CraftScene",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Joe Temraz",
-      title: "Director of AlphaStream Technologies",
+        "Working with Youssef on our Events Application was a game-changer. His full-stack capabilities and problem-solving approach turned our complex requirements into a seamless, scalable solution. Highly recommend for any challenging project.",
+      name: "Jennifer Rodriguez",
+      title: "Product Manager at EventHub",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Joe Temraz",
-      title: "Director of AlphaStream Technologies",
+        "Youssef's expertise in modern web technologies is impressive. He delivered our dashboard project with clean, maintainable code and outstanding performance. His communication throughout the process made collaboration effortless.",
+      name: "David Kumar",
+      title: "CTO of TechFlow Systems",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Joe Temraz",
-      title: "Director of AlphaStream Technologies",
+        "Youssef brings both creativity and technical excellence to every project. His innovative solutions and commitment to best practices make him an invaluable development partner. We've seen significant improvements in user engagement since launch.",
+      name: "Amanda Foster",
+      title: "Digital Director at InnovateCo",
     },
   ];
   
@@ -180,9 +180,9 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Healthcare Platform Developer - MedCore",
+      desc: "Developed a comprehensive healthcare facility management system with Next.js and TypeScript, streamlining facility planning and construction workflows.",
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
